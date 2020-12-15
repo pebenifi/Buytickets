@@ -10,12 +10,33 @@ class FirstForm(QMainWindow):
         self.initUI()
 
     def initUI(self):
-        self.setGeometry(300, 300, 300, 300)
-        self.setWindowTitle('Главная форма')
+        self.setGeometry(0, 35, 1980, 1920)
+        self.setWindowTitle('Главная страница')
 
-        self.btn = QPushButton('Другая форма', self)
-        self.btn.resize(100, 100)
-        self.btn.move(100, 100)
+
+
+
+
+        self.btn = QPushButton('Аккаунт', self)
+        self.btn.resize(200, 100)
+        self.btn.move(0,200)
+
+        self.btn = QPushButton('Афиша', self)
+        self.btn.resize(200, 100)
+        self.btn.move(0, 0)
+
+        self.btn = QPushButton('Мои Билеты', self)
+        self.btn.resize(200, 100)
+        self.btn.move(0, 100)
+
+        self.btn = QPushButton('О программе', self)
+        self.btn.resize(100, 50)
+        self.btn.move(0, 950)
+
+
+
+
+
 
         self.btn.clicked.connect(self.open_second_form)
 
